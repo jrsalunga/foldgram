@@ -69,7 +69,11 @@ return array(
 
 	'memcached' => array(
 
-		array('host' => '127.0.0.1', 'port' => 11211, 'weight' => 100),
+		array(
+			'host' => 'pub-memcache-19677.us-east-1-3.4.ec2.garantiadata.com', 
+			'port' => 19677, 
+			'weight' => 100
+		),
 
 	),
 

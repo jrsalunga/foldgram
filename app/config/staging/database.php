@@ -23,12 +23,23 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'foldgram',
-			'username'  => 'root',
-			'password'  => 'p@55w0rd',
+			'database'  => 'homestead',
+			'username'  => 'homestead',
+			'password'  => 'secret',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+		),
+
+		'pgsql' => array(
+			'driver'   => 'pgsql',
+			'host'     => 'localhost',
+			'database' => 'homestead',
+			'username' => 'homestead',
+			'password' => 'secret',
+			'charset'  => 'utf8',
+			'prefix'   => '',
+			'schema'   => 'public',
 		),
 
 	),
