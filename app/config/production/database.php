@@ -26,7 +26,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'b555b316d90e5b:36c4be54@us-cdbr-iron-east-01.cleardb.net',
+			'host'      => 'us-cdbr-iron-east-01.cleardb.net',
 			'database'  => 'heroku_e7df5a047f68d84',
 			'username'  => 'b555b316d90e5b',
 			'password'  => '36c4be54',
