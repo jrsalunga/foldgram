@@ -3,8 +3,42 @@
 
 
 Route::get('/', function(){
-	return View::make('hello');
+	return View::make('home')
+				->with('title', 'The Foldagram')
+				->with('page', 'home');
 });
+
+Route::get('/about',  array('as'=>'about', function(){
+	return View::make('about')
+				->with('title', 'About Us - The Foldagram')
+				->with('page', 'about');
+	
+}));
+
+Route::get('/login',  array('as'=>'login', function(){
+	
+}));
+
+
+Route::get('/pcredit',  array('as'=>'pcredit', function(){
+	
+}));
+
+Route::get('/cart',  array('as'=>'cart', function(){
+	
+}));
+
+Route::get('/contact',  array('as'=>'contact', function(){
+	
+}));
+
+Route::get('/userlogin',  array('as'=>'userlogin', function(){
+	
+}));
+
+Route::get('/register',  array('as'=>'register', function(){
+	
+}));
 
 
 

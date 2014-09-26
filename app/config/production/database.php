@@ -36,4 +36,6 @@ return array(
 		),
 	),
 
+	'migrations' => 'migrations',
+
 );

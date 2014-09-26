@@ -1,0 +1,101 @@
+body { font-size: 14px; color: #777; font-family: 'Museo', Arial;
+line-height: 20px; }
+p { margin-bottom: 15px }
+.da-slide p { color: black }
+a:hover { color: #e65c08; text-decoration: none; }
+li { line-height: 25px }
+h3 { font-size: 18px; line-height: 20px; }
+h4 { font-size: 16px; font-weight: normal; }
+.btn { font-family: Museo; font-weight: normal; }
+.row { margin: 0 }
+.header { border-bottom: 1px dashed #d1d1d1; padding-bottom: 25px; }
+.header .logo { padding-top: 20px; padding-left: 5%; }
+.header .logo a:hover { border: none }
+.header .menu { padding-top: 80px; width: 54%; }
+.header .menu ul { float: right; margin: 0; }
+.header .menu li { display: inline; padding: 0 10px; }
+.header .menu li a { color: #646363; font-size: 15px; font-family:
+'Museo', "Myriad Pro", 'Droid Sans', sans-serif; }
+.header .menu li a:hover { text-decoration: none; color: #646363 ;
+border-bottom: 1px solid #e33f23; }
+a { color: #e33f23 }
+.footer a:hover { color: #848484; border-bottom: 1px solid #e33f23; }
+.header .social { text-align: right; margin-left: 10px; padding-top:
+78px; width: 10%; }
+.header .social a { margin-right: 5px }
+img.facebook { width: 22px; height: 22px; background: url(/img/
+facebook.png) 0 0; }
+a:hover img.facebook { background: url(/img/facebook.png) 0 -22px }
+img.twit { width: 21px; height: 22px; background: url(/img/twit.png)
+0 0; }
+a:hover img.twit { background: url(/img/twit.png) 0 -22px }
+img.ping { width: 24px; height: 23px; background: url(/img/ping.png)
+0 0; }
+a:hover img.ping { background: url(/img/ping.png) 0 -23px }
+.slider { overflow: hidden; background: url(/img/sliderbg.png) norepeat
+275px 0; }
+.slider-content { background: url(/img/middle-shadow.png) no-repeat
+center bottom; padding-bottom: 85px; position: relative; z-index: 1; }
+.fguid { background-color: #f9f9f9; padding-top: 75px; padding-bottom:
+40px; margin-top: -60px; text-align: center; }
+.fguid h2 { margin: 0; text-align: center; font-family: 'Museo',
+"Myriad Pro", 'Droid Sans', sans-serif; font-size: 35px; color:
+#6f6f6f; font-weight: normal; margin-bottom: 40px; }
+.fguid ul { margin-top: 50px }
+.fguid ul li { text-align: left; list-style: square; font-family:
+Arial; font-size: 15px; color: #696969; margin-bottom: 10px; textshadow:
+0px 0px 1px rgba(0,0,0,0.2); }
+.fguid ul li:last-child { margin-bottom: 0 }
+.fguid .we-send,
+.fguid .you-click { background: url(/img/right-arrow.png) no-repeat
+right 110px }
+.you-click ul,
+.we-send ul,
+.they-fold ul { margin-left: 60px }
+.fguid .they-fold img { margin-bottom: 10px }
+.subcribe-form { background-color: #bcbcbc; padding: 20px 0 0; }
+.subcribe-form .subscribe-content { padding-left: 100px }
+.subcribe-form .subscribe-content label { color: #585858; font-size:
+13px; text-shadow: 0px 0px 1px rgba(0,0,0,0.2); margin-right: 15px; }
+.subcribe-form .subscribe-content .input-large { background-color:
+#e7e7e7; border: 1px solid #d2d2d2; border-radius: 0; height: 25px;
+margin-right: 15px; width: 292px; }
+.subcribe-form .subscribe-content .btn { background-color: #fff ;
+background-image: none; color: #454444; border-radius: 0; height:
+33px; padding-left: 20px; padding-right: 20px; border: 0; }
+.subcribe-form .subscribe-content .btn:hover { background-color:
+#e33f23 ; color: #fff; }
+.footer { background-color: #808080; padding-top: 40px; border-top:
+1px dashed #bcbcbc; padding-bottom: 38px; }
+.footer .footer-menu ul li { display: inline; list-style: none;
+padding: 0 10px; }
+.footer .footer-menu ul li a { color: #d5d5d5; text-shadow: 0px 0px
+2px #999999; font-size: 12px; }
+.footer .footer-menu ul li a:hover { color: #d5d5d5 ; textdecoration:
+none; border-bottom: 1px solid #e33f23; }
+.footer .copyright { text-align: right; padding-right: 30px; }
+.footer .copyright h4 { font-size: 12px; text-shadow: 0px 0px 2px
+#999999; color: #d5d5d5; margin-top: 0; margin-bottom: 0px; fontweight:
+normal; }
+.footer .copyright p { color: #b3b3b3; font-size: 11px; margin-bottom:
+0; }
+.inner-top { background: url(/img/inner-top.png) no-repeat right
+top; background-color: #eeeeee; margin-top: 1px; padding-bottom: 20px;
+position: relative; }
+.inner-top h2 { color: #777; font-size: 22px; font-family: 'Museo',
+"Myriad Condensed Web", 'Droid Sans', sans-serif; line-height:
+24px; font-weight: normal; text-shadow: 0px 0px 2px #fff; margin-top:
+0; }
+.inner-top p { font-size: 13px; font-family: Museo; color: #848484; }
+.inner-top .inner-content { padding-left: 30px; padding-top: 35px; }
+.inner-top img { position: absolute; right: 50px; bottom: -65px; }
+.home .content .alert { margin-top: 0px; margin-bottom: 75px; }
+.content .alert { margin-top: 65px }
+.content .dcontent .alert { margin-top: 25px }
+.content h2 { font-size: 30px; font-family: 'Museo', "Myriad
+Condensed Web",'Droid Sans', sans-serif; font-weight: normal; lineheight:
+20px; color: #555555; margin-bottom: 35px; }
+.content .dcontent { padding: 0 25px; margin-left: 0; margin-top:
+47px; padding-bottom: 100px; }
+.header { position: relative; min-height: 111px; }
+.header .menu { width: 52% }

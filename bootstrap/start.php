@@ -28,7 +28,7 @@ $env = $app->detectEnvironment(array(
 
 	'local' => array('jrsalunga'),
 	'staging' => array('staging'),
-	'production' => array('d9f0f440-6dfd-42e9-a78f-1fcfbde54447')
+	'production' => array('d9f0f440-6dfd-42e9-a78f-1fcfbde54447'),
 
 ));
 
