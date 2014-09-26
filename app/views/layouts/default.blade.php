@@ -44,10 +44,10 @@
 			<div class="span6 menu">
 				<ul>
 					<li><a href="#popup" data-toggle="modal">Create Foldagram</a></li>
-
 					<li>{{ link_to_route('pcredit', 'Purchase Credits') }}</li>
-					<li>{{ link_to_route('cart', 'Cart') }}</li>
 					<li>{{ link_to_route('contact', 'Contact') }}</li>
+					<li>{{ link_to_route('cart', 'Cart') }}</li>
+					
 				</ul>
 			</div>
 			<div class="span2 social">
@@ -61,34 +61,59 @@
 					<img class="ping" src="{{ URL::to('/') }}/img/img_trans.png" />
 				</a>
 			</div>
-			</div>
-				@yield('inner-banner')
-			<div class="row-fluid content">
-				@yield('content')
-			</div>
-			<div class="row-fluid subcribe-form">
-				<div class="span12 subscribe-content">
-					{{ Form::open(array('url' => 'subscribe', 'class'=>'form-inline')) }}
-					{{ Form::label('something', 'Sign Up for Our Newsletter and Updates!') }}
-					{{ Form::text('email', null, array('class' => 'input-large', 'placeholder' => '')) }}
-					{{ Form::submit('Subscribe', array('class'=>'btn')) }}
-					{{ Form::close() }}
-				</div>
-			</div>
-			<div class="row-fluid footer">
-				<div class="span8 footer-menu">
+		</div>
+				
+		@yield('inner-banner')
+
+		<div class="row-fluid content">
+			
+			@if(Session::has('success'))
+				<div class="alert alert-success">
+					<button class="close" data-dismiss="alert" type="button">×</button>
+					{{ Session::get('success') }}
+				</div>	
+			@endif
+
+			@if($errors->any())	
+				<div class="alert alert-error alert-block">
+					<button class="close" data-dismiss="alert" type="button">×</button>
+					<h4>Error!</h4>  {{-- Session::get('error') --}}
+					<p>The following errors have occurred:</p>
 					<ul>
-						<li>{{ link_to_route('contact', 'Contact') }}</li>
-						<li>{{ link_to_route('about', 'About Us') }}</li>
-						<li>{{ link_to_route('login', 'Log In')	}}</a></li>
-						<li>{{ link_to_route('register', 'Register') }}</a></li>
+					{{ implode('', $errors->all('<li class="error">:message</li>')) }}
 					</ul>
-				</div>
-				<div class="span4 copyright">
-					<h4>Foldagram is patent pending</h4>
-					<p>&copy;Copyright All Encompassing Productions llc, 2012</p>
-				</div>
+				</div>	
+			@endif
+
+		</div>
+
+		@yield('content')
+
+			
+		<div class="row-fluid subcribe-form">
+			<div class="span12 subscribe-content">
+				{{ Form::open(array('url' => 'subscribe', 'class'=>'form-inline')) }}
+				{{ Form::label('something', 'Sign Up for Our Newsletter and Updates!') }}
+				{{ Form::text('email', null, array('class' => 'input-large', 'placeholder' => '')) }}
+				{{ Form::submit('Subscribe', array('class'=>'btn')) }}
+				{{ Form::close() }}
 			</div>
+		</div>
+		
+		<div class="row-fluid footer">
+			<div class="span8 footer-menu">
+				<ul>
+					<li>{{ link_to_route('contact', 'Contact') }}</li>
+					<li>{{ link_to_route('about', 'About Us') }}</li>
+					<li>{{ link_to_route('login', 'Log In')	}}</a></li>
+					<li>{{ link_to_route('register', 'Register') }}</a></li>
+				</ul>
+			</div>
+			<div class="span4 copyright">
+				<h4>Foldagram is patent pending</h4>
+				<p>&copy;Copyright All Encompassing Productions llc, 2012</p>
+			</div>
+		</div>
 		</div>
 	</div><!-- End Container -->
 </body>

@@ -85,6 +85,8 @@ Route::filter('csrf', function()
 {
 	if (Session::token() != Input::get('_token'))
 	{
-		throw new Illuminate\Session\TokenMismatchException;
+		//throw new Illuminate\Session\TokenMismatchException;
+		$errors='Fatal Error: If you try this procedure again in any page of the site will be permanently banned';
+		return Redirect::back()->withInput()->withErrors($errors);
 	}
 });

@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('content')
+@section('inner-banner')
 <div class="row-fluid slider-content">
 	<div class="span12 slider">
 		<div class="flexslider">
@@ -34,9 +34,12 @@
 			</ul>
 		</div>
 	</div>
-	</div>
-	<div class="row-fluid fguid">
-		<div class="span4 you-click">
+</div>
+@stop
+
+@section('content')
+<div class="row-fluid fguid">
+	<div class="span4 you-click">
 			<h2>You Click</h2>
 			<img src="img/photo.png">
 			<ul>
@@ -44,8 +47,8 @@
 				<li>Fill out the addresses</li>
 				<li>Buy one at a time or start an account</li>
 			</ul>
-		</div>
-		<div class="span4 we-send">
+	</div>
+	<div class="span4 we-send">
 			<h2>We Send</h2>
 			<img src="img/fly.png">		
 			<ul>
@@ -53,8 +56,8 @@
 				<li>We stamp it for you</li>
 				<li>Foldagrams are mailed weekdays at noon</li>
 			</ul>
-		</div>
-		<div class="span4 they-fold">
+	</div>
+	<div class="span4 they-fold">
 			<h2>They Fold</h2>
 			<img src="img/mail.png">
 			<ul>
@@ -62,6 +65,7 @@
 				<li>Fold into standing position</li>
 				<li>Skip the fridge magnets and picture frames!</li>
 			</ul>
-		</div>
 	</div>
+</div>
+
 @stop
