@@ -115,5 +115,7 @@
 		</div>
 		</div>
 	</div><!-- End Container -->
+
+	@include('foldgram')
 </body>
 </html>

@@ -37,6 +37,9 @@ Route::get('/login',  array('as'=>'login', function(){
 	
 }));
 
+Route::get('/create',  array('as'=>'create', function(){
+	
+}));
 
 Route::get('/pcredit',  array('as'=>'pcredit', function(){
 	
