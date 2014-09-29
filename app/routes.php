@@ -64,7 +64,9 @@ Route::get('/register',  array('as'=>'register', function(){
 
 
 
-
+Route::get('/cart',  array('as'=>'cart', function(){
+	return Cart::message();
+}));
 
 
 
