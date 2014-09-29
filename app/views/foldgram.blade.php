@@ -1,5 +1,5 @@
 
-<div id="popup" class="modal hide fade in" tabindex="1" role="dialog" aria-labelledby="myModalLabel" ariahidden=" false" style="display: block;">
+<div id="popup" class="modal hide fade in" tabindex="1" role="dialog" aria-labelledby="myModalLabel" ariahidden=" false" style="display: none;">
 	<div class="modal-body">
 		<div class="cfrom-wapper">
 			<img src="{{ URL::asset('/img/create-form-flow.png') }}" />
