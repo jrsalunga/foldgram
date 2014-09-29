@@ -37,9 +37,7 @@ Route::get('/login',  array('as'=>'login', function(){
 	
 }));
 
-Route::get('/create',  array('as'=>'create', function(){
-	
-}));
+Route::post('/create',  array('as'=>'create', 'uses'=>'FoldagramController@create'));
 
 Route::get('/pcredit',  array('as'=>'pcredit', function(){
 	
@@ -65,7 +63,8 @@ Route::get('/register',  array('as'=>'register', function(){
 
 
 Route::get('/cart',  array('as'=>'cart', function(){
-	return Cart::message();
+	//return Cart::message();
+	return Foldgram::all();
 }));
 
 

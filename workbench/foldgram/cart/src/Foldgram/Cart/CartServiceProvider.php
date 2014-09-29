@@ -1,4 +1,6 @@
-<?php namespace Foldgram\Cart;
+<?php 
+
+namespace Foldgram\Cart;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -51,8 +53,8 @@ class CartServiceProvider extends ServiceProvider {
 	* @return void
 	*/
 	public function register() {
-		$this->app['cart'] = $this->app->share(function($app){
-			return new Cart;
+		$this->app['Cart'] = $this->app->share(function($app){
+			return new Cart($this->app['session']);
 		});
 	}
 	
@@ -62,7 +64,7 @@ class CartServiceProvider extends ServiceProvider {
 	* @return array
 	*/
 	public function provides(){
-		return array('cart');
+		return array('Cart');
 	}
 
 }

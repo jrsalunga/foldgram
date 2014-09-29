@@ -31,7 +31,7 @@ class CreateFoldgramTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('foldagram');
 	}
 
 }
