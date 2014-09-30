@@ -4,14 +4,16 @@
 		<div class="cfrom-wapper">
 			<img src="{{ URL::asset('/img/create-form-flow.png') }}" />
 			<button class="close " aria-hidden="true" data-dismiss="modal" type="button">×</button>
-			{{ Form::open( array('url' => URL::route('create') )) }}
+			{{ Form::open( array('url' => URL::route('create'), 'files' => true )) }}
 			<div class="setp1">
 				<div class="message create-form">
 					<textarea rows="4" class="enter-message  required" placeholder="Enter Your Message: " name="message" cols="50"></textarea>
 					<br>You have <span id="charsLeft">1200</span> chars left.
 					<div class="clear"></div>
-					<div id="thumbnail"><img src="{{ URL::asset('/img/placeholder.gif') }}" /></div>
-					<input type="file" style="display:none" id="upload-image" name="image" class="required">
+					<div id="thumbnail"><img src="{{ URL::asset('/img/placeholder.gif') }}" /></div>	
+					
+					
+					{{ Form::file('image', array('id'=>'upload-image', 'class'=>'required', 'style'=>'opacity: 0; height: 0px; width: 10px;')) }}
 					<div id="upload" class="drop-area">
 						<span class="uploadfile">Upload File</span>
 						<p class="help-block">Files must be less than <span>8 MB</span></p>
@@ -37,5 +39,15 @@
 			</div>
 			{{ Form::close() }}
 		</div>
+	</div>
+</div>
+
+<div id="recipient_address" style="display:none">
+	<div id="recip_aid" class="recipient_address">
+		<h3>
+			Recipient's Address<span class="acount" style="display: none;"># rone</span>
+		</h3>
+	<input class="required " type="text" value="" name="add[zero][fullname]" placeholder="Full Name:">
+	<textarea class="required " cols="50" name="add[zero][address_one]" rows="8" placeholder="Enter Recipient's Address here:"></textarea>
 	</div>
 </div>

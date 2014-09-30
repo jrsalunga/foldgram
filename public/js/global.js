@@ -1,10 +1,11 @@
+/*
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
     slideshow: true,
   });
 });
-
+*/
 $(function() {
 
   $('#qty').keyup(function(e) {  // e=event
@@ -87,7 +88,7 @@ $(function() {
   html = html.replace("rone",j);
   html = html.replace("aid",j);
 
-  $(".recipient_address_wapper").append(html);
+  //$(".recipient_address_wapper").append(html);
  
   $(".add").on('click',function(){    
     //$('.total_foldagram p.total').html("<strong>Total Item : </strong>"+j);

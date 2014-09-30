@@ -7,6 +7,10 @@
 <meta name="viewport" content="width=device-width">
 <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
+<script type="text/javascript">
+	var base_url = "http://foldgram.herokuapp.com/"; // doesn't come WITH a trailing slash!
+	var total_itme = "0";
+</script>
 
 {{ HTML::style('css/bootstrap.min.css') }}
 {{ HTML::style('css/bootstrap-responsive.min.css') }}
@@ -16,9 +20,11 @@
 
 {{ HTML::script('js/jquery-1.9.1.min.js') }}
 {{ HTML::script('js/bootstrap.min.js') }}
-
-
+{{ HTML::script('js/global.js') }}
+{{ HTML::script('js/jquery.validate.js') }}
 {{ HTML::script('js/jquery.flexslider.js') }}
+{{ HTML::script('js/jquery.limit.js') }}
+
 
 
 
