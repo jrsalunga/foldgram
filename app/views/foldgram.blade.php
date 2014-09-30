@@ -25,8 +25,8 @@
 				<div class="photocreate-form recipient_address_wapper">
 					<div class="recipient_address" id="recip_1">
 						<h3>Recipients Address <span class="acount" style="display: none;">1</span> </h3>
-						<input placeholder="Full Name:" class="required " type="text" name="add[0][fullname]" value="">
-						<textarea placeholder="Enter Recipients Address here:" rows="8" class="required" name="add[0][address_one]" cols="50"></textarea>
+						<input placeholder="Full Name:" class="required " type="text" name="address[0][fullname]" value="">
+						<textarea placeholder="Enter Recipients Address here:" rows="8" class="required" name="address[0][address_one]" cols="50"></textarea>
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 		<h3>
 			Recipient's Address<span class="acount" style="display: none;"># rone</span>
 		</h3>
-	<input class="required " type="text" value="" name="add[zero][fullname]" placeholder="Full Name:">
-	<textarea class="required " cols="50" name="add[zero][address_one]" rows="8" placeholder="Enter Recipient's Address here:"></textarea>
+	<input class="required " type="text" value="" name="address[zero][fullname]" placeholder="Full Name:">
+	<textarea class="required " cols="50" name="address[zero][address_one]" rows="8" placeholder="Enter Recipient's Address here:"></textarea>
 	</div>
 </div>
